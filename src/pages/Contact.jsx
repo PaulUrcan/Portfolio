@@ -1,8 +1,12 @@
 import React from 'react'
+import Sidenav from '../components/Sidenav'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <>
+    <Sidenav/>
+          <div>Contact</div>
+    </>
   )
 }
 

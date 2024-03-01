@@ -1,8 +1,11 @@
 import React from 'react'
+import Sidenav from '../components/Sidenav'
 
 const Work = () => {
   return (
-    <div>Work</div>
+    <>
+      <Sidenav/>
+    </>
   )
 }
 
