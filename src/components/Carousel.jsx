@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Images from '../assets/imgs/Images'
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -14,8 +14,20 @@ import { RxArrowTopRight } from "react-icons/rx";
 import { ServiceData } from "../constants";
 
 const Carousel = () => {
+    const [showBody, setShowBody] = useState(false)
+
+useEffect(() => {
+  setShowBody(true)
+
+  return () => {
+    setShowBody(false)
+  }
+}, [])
+
+
+
     return (
-        <div className="flex items-center justify-center flex-col h-screen gap-5    ">
+        <div className={`flex items-center justify-center flex-col h-screen gap-5 opacity-0 transition-opacity duration-700 ease-in ${showBody ? 'opacity-100' : 'opacity-0'}`}>
             <div className='flex flex-row justify-center gap-2'>
                 <h1 className='text-3xl text-orange-600 font-medium'>MY</h1>
                 <h1 className='text-3xl text-orange-600 font-bold'>PROJECTS</h1>
