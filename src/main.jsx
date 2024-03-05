@@ -8,6 +8,7 @@ import Resume from './pages/Resume.jsx'
 import Contact from './pages/Contact.jsx'
 import Error404 from './pages/Error404.jsx'
 import Home from './pages/Home.jsx'
+import Mail from './pages/Mail.jsx'
 
   const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ import Home from './pages/Home.jsx'
     {
       path: "/contact",
       element: <Contact />,
+    },
+    {
+      path: "/mail",
+      element: <Mail />,
     },
     {
       path: "/*",

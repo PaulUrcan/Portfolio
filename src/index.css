@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 body {
-    background: rgb(15,9,111);
-    background: linear-gradient(267deg, rgba(15,9,111,1) 0%, rgba(75,75,186,1) 65%, rgba(0,120,173,1) 100%);
+	background: rgb(15, 9, 111);
+	background: linear-gradient(267deg, rgb(20, 20, 20) 0%, rgb(0, 0, 5) 65%, rgb(0, 0, 0) 100%);
 }
 
 /* Home */
 
 .line {
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    left: 7%;
-    right: 7%;
-    animation: moveLine 1.4s ease-in-out;
+	height: 2px;
+	position: absolute;
+	left: 7%;
+	right: 7%;
+	animation: moveLine 1.4s ease-in-out;
 }
 
 @keyframes moveLine {
-    0% {
-        right: 93%;
-    }
-    100% {
-        right: 7%;
-    }
+	0% {
+		right: 93%;
+	}
+
+	100% {
+		right: 7%;
+	}
 }
 
 .avatar {
@@ -32,29 +32,60 @@ body {
 	border: 5px white solid;
 	border-radius: 50%;
 	overflow: hidden;
-	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 	transform: translatex(0px);
 	animation: float 3s ease-in-out;
-	img { width: 100%; height: auto; }
+
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 
 @keyframes float {
 	0% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-		transform: translatex(60px);
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+		transform: translatex(30px);
 	}
+
 	100% {
-		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
 		transform: translatex(0px);
 	}
 }
 
-/* Error404 */
-
 /* Sidenav */
 
 .side-item:hover h1 {
-    opacity: 1;
+	opacity: 1;
 }
 
-/* Resume */
+/* Carousel */
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	border-radius: 10px;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+	display: none;
+}
+
+.swiper-button-prev.slider-arrow,
+.swiper-button-next.slider-arrow {
+	--tw-text-opacity: 1;
+	color: rgb(253 186 116 / var(--tw-text-opacity));
+}
+
+.swiper-button-prev.slider-arrow:hover,
+.swiper-button-next.slider-arrow:hover {
+	--tw-text-opacity: 1;
+	color: rgb(234 88 12 / var(--tw-text-opacity));
+	transition: color 300ms ease-in;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	background-color: rgb(234 88 12 );
+}
