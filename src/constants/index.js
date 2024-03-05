@@ -8,28 +8,29 @@ import {
   
   export const ServiceData = [
     {
-      icon: RxCrop,
-      title: "Development",
-      content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-      // background:
-    },
-    {
-      icon: RxPencil2,
-      title: "Branding",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      // background:
-    },
-    {
       icon: RxDesktop,
       title: "LuminSpa",
-      content: "Pagina dedicada a la venta de cosmeticos",
+      content: "Pagina dedicada a la venta de cosmeticos.",
       //backgroundImage:
-      link: "https://65e77ddc3b5ee861c1048ec4--cool-paprenjak-016959.netlify.app/"
+      backgroundColor: "rgb(249,166,123)",
+      link: "https://65e783879ce37c71a5e05237--resplendent-blancmange-3a2155.netlify.app/"
     },
     {
-      icon: RxReader,
-      title: "Seo",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      icon: RxCrop,
+      title: "Insertar Proyecto",
+      content: "Insertar Descripcion de proyecto",
+      // background:
+    },
+    {
+      icon: RxCrop,
+      title: "Insertar Proyecto",
+      content: "Insertar Descripcion de proyecto",
+      // background:
+    },
+    {
+      icon: RxCrop,
+      title: "Insertar Proyecto",
+      content: "Insertar Descripcion de proyecto",
       //background:
     },
   ];
