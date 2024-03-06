@@ -52,10 +52,10 @@ const Resume = () => {
             <div className='md:h-1/2 overflow-hidden md:opacity-80 hover:opacity-100 md:hover:scale-105 ease-in duration-200 md:rounded-full shadow-md shadow-black border-solid border-8 border-white'>
               <img className=' h-full' src={Images.spflag} alt="" />
               <div className='flex flex-row md:flex-col absolute top-1/2 left-1/2 duration-200 transform -translate-x-1/2 -translate-y-1/2'>
-                <div class='relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12'>
-                  <div class="rounded-md flex flex-col md:flex-row items-center justify-between border-solid border-white border-2 bg-red-600 p-3 gap-2 md:opacity-100 opacity-90">
-                    <div class="text-lg font-bold text-gray-100">PaulUrcanCurriculum.pdf</div>
-                    <div class="flex items-center space-x-2 text-gray-100">
+                <div className='relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12'>
+                  <div className="rounded-md flex flex-col md:flex-row items-center justify-between border-solid border-white border-2 bg-red-600 p-3 gap-2 md:opacity-100 opacity-90">
+                    <div className="text-lg font-bold text-gray-100">PaulUrcanCurriculum.pdf</div>
+                    <div className="flex items-center space-x-2 text-gray-100">
                       <svg onClick={() => handleViewPdf(pdfUrl[0].url)} xmlns="http://www.w3.org/2000/svg" fill="currentColor" className='h-6 w-6 cursor-pointer' viewBox="0 0 442.04 442.04">
                         <g>
                           <g>
@@ -83,10 +83,10 @@ const Resume = () => {
             <div className='md:h-1/2 overflow-hidden md:opacity-80 hover:opacity-100 md:hover:scale-105 ease-in duration-200 md:rounded-full shadow-md shadow-black border-solid border-8 border-white'>
               <img className='h-full' src={Images.ukflag} alt="" />
               <div className='flex flex-row md:flex-col absolute top-1/2 left-1/2 duration-200 transform -translate-x-1/2 -translate-y-1/2'>
-                <div class='relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12'>
-                  <div class="rounded-md flex flex-col md:flex-row items-center justify-between border-solid border-white border-2 bg-red-600 p-3 gap-2 md:opacity-100 opacity-90">
-                    <div class="text-lg font-bold text-gray-100">PaulUrcanResume.pdf</div>
-                    <div class="flex items-center space-x-2 text-gray-100">
+                <div className='relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12'>
+                  <div className="rounded-md flex flex-col md:flex-row items-center justify-between border-solid border-white border-2 bg-red-600 p-3 gap-2 md:opacity-100 opacity-90">
+                    <div className="text-lg font-bold text-gray-100">PaulUrcanResume.pdf</div>
+                    <div className="flex items-center space-x-2 text-gray-100">
                       <svg onClick={() => handleViewPdf(pdfUrl[1].url)} xmlns="http://www.w3.org/2000/svg" fill="currentColor" className='h-6 w-6 cursor-pointer' viewBox="0 0 442.04 442.04">
                         <g>
                           <g>
