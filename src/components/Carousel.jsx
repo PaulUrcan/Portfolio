@@ -72,9 +72,9 @@ useEffect(() => {
                                 className="absolute inset-0 bg-cover bg-center"
                                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
                             />
-                            <div className="absolute inset-0 bg-gray-500 opacity-100 group-hover:bg-gray-900 transition duration-200 ease-in" />
+                            <div className="absolute inset-0 md:bg-gray-500 bg-gray-900 opacity-100 group-hover:bg-gray-900 transition duration-200 ease-in" />
                             <div className="relative flex flex-col gap-3">
-                                <item.icon className="text-orange-300 group-hover:text-orange-600 w-1/6 h-1/6 duration-200 ease-in" />
+                                <item.icon className="md:text-orange-300 text-orange-600 group-hover:text-orange-600 w-1/6 h-1/6 duration-200 ease-in" />
                                 <h1 className="text-xl lg:text-2xl">{item.title} </h1>
                                 <p className="lg:text-[18px]">{item.content} </p>
                             </div>

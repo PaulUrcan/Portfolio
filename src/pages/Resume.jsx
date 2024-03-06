@@ -36,7 +36,7 @@ const Resume = () => {
   return (
     <>
       <Sidenav />
-      <div className={`h-screen overflow-hidden transition-opacity duration-700 ease-in ${showTitle ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`h-screen transition-opacity duration-700 ease-in ${showTitle ? 'opacity-100' : 'opacity-0'}`}>
         <div className='flex flex-col gap-2 justify-end items-center h-32'>
           <div className='flex flex-row gap-2 justify-center'>
             <h1 className='text-orange-600 text-4xl font-medium'>MY</h1>
@@ -47,14 +47,14 @@ const Resume = () => {
             <h1 className='text-orange-300 text-xl font-medium'>Versions</h1>
           </div>
         </div>
-        <div className={`flex flex-col md:flex-row opacity-0 h-2/3 transition-opacity duration-700 ease-in justify-center items-center overflow-hidden ${showBody ? 'opacity-100' : 'opacity-0'}`}>
-          <div className='relative flex flex-row justify-center items-center w-1/2'>
+        <div className={`flex flex-col md:flex-row opacity-0 h-2/3 transition-opacity duration-700 ease-in justify-center items-center overflow-hidden gap-5 ${showBody ? 'opacity-100' : 'opacity-0'}`}>
+          <div className='relative flex flex-row justify-center items-center md:w-1/2 w-3/4 md:mb-0 mb-5'>
             <div className='md:h-1/2 overflow-hidden md:opacity-80 hover:opacity-100 md:hover:scale-105 ease-in duration-200 md:rounded-full shadow-md shadow-black border-solid border-8 border-white'>
               <img className=' h-full' src={Images.spflag} alt="" />
               <div className='flex flex-row md:flex-col absolute top-1/2 left-1/2 duration-200 transform -translate-x-1/2 -translate-y-1/2'>
                 <div class='relative flex min-h-screen flex-col justify-center overflow-hidden py-6 sm:py-12'>
-                  <div class="rounded-md flex flex-col md:flex-row items-center justify-between border-solid border-white border-2 bg-red-600 p-3 gap-2 md:opacity-100 opacity-80">
-                    <div class="text-lg font-bold text-gray-100">PaulUrcanCV.pdf</div>
+                  <div class="rounded-md flex flex-col md:flex-row items-center justify-between border-solid border-white border-2 bg-red-600 p-3 gap-2 md:opacity-100 opacity-90">
+                    <div class="text-lg font-bold text-gray-100">PaulUrcanCurriculum.pdf</div>
                     <div class="flex items-center space-x-2 text-gray-100">
                       <svg onClick={() => handleViewPdf(pdfUrl[0].url)} xmlns="http://www.w3.org/2000/svg" fill="currentColor" className='h-6 w-6 cursor-pointer' viewBox="0 0 442.04 442.04">
                         <g>
@@ -79,7 +79,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <div className='relative flex flex-row justify-center items-center w-1/2'>
+          <div className='relative flex flex-row justify-center items-center md:w-1/2 w-3/4'>
             <div className='md:h-1/2 overflow-hidden md:opacity-80 hover:opacity-100 md:hover:scale-105 ease-in duration-200 md:rounded-full shadow-md shadow-black border-solid border-8 border-white'>
               <img className='h-full' src={Images.ukflag} alt="" />
               <div className='flex flex-row md:flex-col absolute top-1/2 left-1/2 duration-200 transform -translate-x-1/2 -translate-y-1/2'>

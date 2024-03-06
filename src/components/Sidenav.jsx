@@ -35,7 +35,7 @@ const Sidenav = () => {
                     </div>)
                 :
                 (<div></div>)}
-            <div className='md:block hidden fixed top-[25%] z-10'>
+            <div className='md:block hidden fixed top-[25%] z-10 md:m-2'>
                 <div className='flex flex-col'>
                     <Link to='/' className='p-2 cursor-pointer'>
                         <div className='flex flex-row items-center side-item'>
